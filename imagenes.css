@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    visibility: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    margin-left: 568px;
+    padding: 20px;
+    height: 100px;
+    
+    background-image: url(../pre-entrega/img/fondo\ god.png);
+    background-repeat: no-repeat;
+    
+}
+nav{
+    display: flex;
+    justify-content: right;
+    background-color: #051f5a;
+    font-family: Georgia, Cambria, Times, "Times New Roman", serif;
+}
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+#inicio:hover{
+    color: red;
+}
+#contacto:hover{
+    color: red;
+}
+#videos:hover{
+    color: red;
+}
+#imagenes:hover{
+    color: red;
+}
+.row{
+    width: 100%;
+    height: 768px;
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+section{
+    
+    flex: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #051f5a;
+}
+section h2{
+    padding: 10px;
+    margin-bottom: 5%;
+    border: solid 2px #051f5a;
+    background-color: whitesmoke;
+    text-align: center;
+    color: #051f5a;
+    font-family: monospace;
+}
+
+.galeria{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.galeria img{
+    max-width: 400px;
+    padding: 1rem;
+}
+
+footer{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    background-color: #051f5a;
+    display: flex;
+    justify-content: space-around;
+}
+#twitter{
+    color: white;
+}
+#facebook{
+    color: white;
+}
+#web{
+    color: white;
+}
+#youtube{
+    color: white;
+}
+#twitter:hover{
+    font-size: 30px;
+    color: cadetblue;
+}
+#facebook:hover{
+    font-size: 30px;
+    color: blue;
+}
+#web:hover{
+    font-size: 30px;
+    color: green;
+}
+#youtube:hover{
+    font-size: 30px;
+    color: red;
+}
+@media  (min-width: 260px) and (max-width: 700px){
+    nav, .row {
+        flex-direction: column;
+        
+    }
+
+    header{
+        margin-left: -300px;
+        
+    }
+    section{
+        flex-direction: column;
+    }
+    
+     aside{
+        text-align: center;
+    } 
+    .row{
+        
+        height: 350vh;
+    }
+    
+    
+}
+@media (min-width: 700px) and (max-width: 960px) {
+    
+    header{
+        margin-left: -154px;
+        
+    }
+    .row{
+        
+        height: 250vh;
+        
+    }
+    aside{
+        text-align: center;
+        
+    }
+    section{
+        border-left: none;
+    }
+
+}
+@media  (min-width: 960px) and (max-width: 1200px){
+    
+    header{
+        margin-left: 100px;
+        
+    }
+    .row{
+        height: 180vh;
+    }
+    aside{
+        text-align: center;
+    }
+    section{
+        border-left: none;
+    }
+}
+@media  (min-width: 1200px) and (max-width: 1500px){
+    header{
+        margin-left: 100px;
+    }    
+}
